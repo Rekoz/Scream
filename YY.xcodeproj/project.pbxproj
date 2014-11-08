@@ -26,6 +26,7 @@
 		4D4889671A0E7E3B003196F9 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4889661A0E7E3B003196F9 /* PhotoViewController.swift */; };
 		4D4889691A0E7E44003196F9 /* PhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4889681A0E7E44003196F9 /* PhotoView.xib */; };
 		4DC410171A0EBBAE0069E09F /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC410161A0EBBAE0069E09F /* MainCell.xib */; };
+		4DC410191A0EBC1F0069E09F /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC410181A0EBC1F0069E09F /* MainCell.swift */; };
 		F6884C811A0E89BB008275AB /* AddView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6884C801A0E89BB008275AB /* AddView.xib */; };
 		F6884C831A0E8A03008275AB /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6884C821A0E8A03008275AB /* AddViewController.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		4D4889661A0E7E3B003196F9 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		4D4889681A0E7E44003196F9 /* PhotoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoView.xib; sourceTree = "<group>"; };
 		4DC410161A0EBBAE0069E09F /* MainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCell.xib; sourceTree = "<group>"; };
+		4DC410181A0EBC1F0069E09F /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		F6884C801A0E89BB008275AB /* AddView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddView.xib; sourceTree = "<group>"; };
 		F6884C821A0E8A03008275AB /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 				F6884C821A0E8A03008275AB /* AddViewController.swift */,
 				4D4889641A0E7E1F003196F9 /* MainViewController.swift */,
 				4DC410161A0EBBAE0069E09F /* MainCell.xib */,
+				4DC410181A0EBC1F0069E09F /* MainCell.swift */,
 				2FEA8FEA1A0E8F26008F7FFA /* YYNavViewController.swift */,
 				4D48892D1A0E087C003196F9 /* YY.xcdatamodeld */,
 				4D4889601A0E7D76003196F9 /* Photo.swift */,
@@ -218,6 +221,7 @@
 				F6884C831A0E8A03008275AB /* AddViewController.swift in Sources */,
 				2FEA8FED1A0E9BBC008F7FFA /* DataGenerator.swift in Sources */,
 				4D4889311A0E087C003196F9 /* ViewController.swift in Sources */,
+				4DC410191A0EBC1F0069E09F /* MainCell.swift in Sources */,
 				4D48892C1A0E087C003196F9 /* AppDelegate.swift in Sources */,
 				4D48895F1A0E7D75003196F9 /* Location.swift in Sources */,
 				4D4889671A0E7E3B003196F9 /* PhotoViewController.swift in Sources */,

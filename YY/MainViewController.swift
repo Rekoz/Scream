@@ -14,7 +14,7 @@ import CoreData
 //import YYNavViewController
 import CoreLocation
 
-class MainViewController: UIViewController, CLLocationManagerDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class MainViewController: UIViewController, CLLocationManagerDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
     let locationManager = CLLocationManager()
     var currentLocation:CLLocation = CLLocation()
     var sortedLocations = [Location]()
