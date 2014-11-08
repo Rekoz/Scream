@@ -10,7 +10,19 @@ import Foundation
 import UIKit
 
 class PhotoViewController:UIViewController {
+
     @IBOutlet weak var img1: UIImageView!
+    var photo:Photo = Photo()
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        //fatalError("init(coder:) has not been implemented")
+    }
+    
+    override init() {
+        super.init()
+    }
+    
     
 }
 

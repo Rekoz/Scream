@@ -12,9 +12,13 @@ import UIKit
 
 class YYNavViewController: UINavigationController {
     override init() {
-        super.init(rootViewController: MainViewController())
+        var mvc = MainViewController()
+        //mvc.navigationController = self
+        super.init(rootViewController: mvc)
         //super.initWithRootViewController(MainViewController())
     }
+    
+    
 
     required init(coder aDecoder: NSCoder) {
         //fatalError("init(coder:) has not been implemented")

@@ -14,10 +14,11 @@ import CoreData
 //import YYNavViewController
 import CoreLocation
 
-class MainViewController: UIViewController, CLLocationManagerDelegate {
+class MainViewController: UIViewController, CLLocationManagerDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     let locationManager = CLLocationManager()
     var currentLocation:CLLocation = CLLocation()
     var sortedLocations = [Location]()
+    //var navigationController:UINavigationController
     
     lazy var managedObjectContext : NSManagedObjectContext? = {
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
@@ -29,6 +30,31 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
         }
         }()
 
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 5
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("MainCell", forIndexPath: indexPath) as UICollectionViewCell
+        //setup the cell
+        return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        var pvc = PhotoViewController()
+        //pvc.photo =
+        //setup pvc
+        self.navigationController?.pushViewController(pvc, animated: true)
+    }
+    
+    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+        //deselect
+    }
+    
     override init() {
         super.init()
     }
@@ -40,22 +66,10 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
-        
-        /*
-        LogItem.createInManagedObjectContext(self.managedObjectContext!, title: "1st Item", text: "This is my first log item")
-        LogItem.createInManagedObjectContext(self.managedObjectContext!, title: "2nd Item", text: "This is my second log item")
-        LogItem.createInManagedObjectContext(self.managedObjectContext!, title: "3rd Item", text: "This is my third log item")
-        LogItem.createInManagedObjectContext(self.managedObjectContext!, title: "4th Item", text: "This is my fourth log item")
-        LogItem.createInManagedObjectContext(self.managedObjectContext!, title: "5th Item", text: "This is my fifth log item")
-        LogItem.createInManagedObjectContext(self.managedObjectContext!, title: "6th Item", text: "This is my sixth log item")
-        */
-        
         fetchLocations()
-        
     }
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
