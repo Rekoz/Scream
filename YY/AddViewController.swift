@@ -6,4 +6,12 @@
 //
 //
 
-import Foundation
+import UIKit
+
+class AddViewController: UIImagePickerControllerDelegate {
+    
+    @IBAction func cancel(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    // cancel button addView ???exit
+}
