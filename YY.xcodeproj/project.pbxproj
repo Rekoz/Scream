@@ -16,6 +16,13 @@
 		4D48894F1A0E10A2003196F9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D48894E1A0E10A2003196F9 /* CoreLocation.framework */; };
 		4D4889511A0E10A7003196F9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4889501A0E10A7003196F9 /* CoreData.framework */; };
 		4D4889531A0E10B3003196F9 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4889521A0E10B3003196F9 /* CoreImage.framework */; };
+		4D4889561A0E7A1F003196F9 /* YYStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4889551A0E7A1F003196F9 /* YYStore.swift */; };
+		4D48895F1A0E7D75003196F9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D48895E1A0E7D75003196F9 /* Location.swift */; };
+		4D4889611A0E7D76003196F9 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4889601A0E7D76003196F9 /* Photo.swift */; };
+		4D4889631A0E7E09003196F9 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4889621A0E7E09003196F9 /* MainView.xib */; };
+		4D4889651A0E7E1F003196F9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4889641A0E7E1F003196F9 /* MainViewController.swift */; };
+		4D4889671A0E7E3B003196F9 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4889661A0E7E3B003196F9 /* PhotoViewController.swift */; };
+		4D4889691A0E7E44003196F9 /* PhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4889681A0E7E44003196F9 /* PhotoView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +37,13 @@
 		4D48894E1A0E10A2003196F9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		4D4889501A0E10A7003196F9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
 		4D4889521A0E10B3003196F9 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		4D4889551A0E7A1F003196F9 /* YYStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYStore.swift; sourceTree = "<group>"; };
+		4D48895E1A0E7D75003196F9 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		4D4889601A0E7D76003196F9 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		4D4889621A0E7E09003196F9 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		4D4889641A0E7E1F003196F9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4D4889661A0E7E3B003196F9 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		4D4889681A0E7E44003196F9 /* PhotoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +85,15 @@
 				4D4889301A0E087C003196F9 /* ViewController.swift */,
 				4D4889351A0E087C003196F9 /* Images.xcassets */,
 				4D4889371A0E087C003196F9 /* LaunchScreen.xib */,
+				4D4889621A0E7E09003196F9 /* MainView.xib */,
+				4D4889661A0E7E3B003196F9 /* PhotoViewController.swift */,
+				4D4889681A0E7E44003196F9 /* PhotoView.xib */,
+				4D4889641A0E7E1F003196F9 /* MainViewController.swift */,
 				4D48892D1A0E087C003196F9 /* YY.xcdatamodeld */,
+				4D4889601A0E7D76003196F9 /* Photo.swift */,
+				4D48895E1A0E7D75003196F9 /* Location.swift */,
 				4D4889291A0E087C003196F9 /* Supporting Files */,
+				4D4889551A0E7A1F003196F9 /* YYStore.swift */,
 			);
 			path = YY;
 			sourceTree = "<group>";
@@ -152,8 +173,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D4889631A0E7E09003196F9 /* MainView.xib in Resources */,
 				4D4889391A0E087C003196F9 /* LaunchScreen.xib in Resources */,
 				4D4889361A0E087C003196F9 /* Images.xcassets in Resources */,
+				4D4889691A0E7E44003196F9 /* PhotoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,9 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D4889651A0E7E1F003196F9 /* MainViewController.swift in Sources */,
+				4D4889611A0E7D76003196F9 /* Photo.swift in Sources */,
 				4D4889311A0E087C003196F9 /* ViewController.swift in Sources */,
 				4D48892C1A0E087C003196F9 /* AppDelegate.swift in Sources */,
+				4D48895F1A0E7D75003196F9 /* Location.swift in Sources */,
+				4D4889671A0E7E3B003196F9 /* PhotoViewController.swift in Sources */,
 				4D48892F1A0E087C003196F9 /* YY.xcdatamodeld in Sources */,
+				4D4889561A0E7A1F003196F9 /* YYStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +266,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "YY/YY-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -278,6 +307,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "YY/YY-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
