@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FEA8FEB1A0E8F26008F7FFA /* YYNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEA8FEA1A0E8F26008F7FFA /* YYNavViewController.swift */; };
+		2FEA8FED1A0E9BBC008F7FFA /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEA8FEC1A0E9BBC008F7FFA /* DataGenerator.swift */; };
 		4D2283581A0E91A3003A15F2 /* i53de82SP5CDv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D2283571A0E91A3003A15F2 /* i53de82SP5CDv.jpg */; };
 		4D48892C1A0E087C003196F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D48892B1A0E087C003196F9 /* AppDelegate.swift */; };
 		4D48892F1A0E087C003196F9 /* YY.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D48892D1A0E087C003196F9 /* YY.xcdatamodeld */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FEA8FEA1A0E8F26008F7FFA /* YYNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYNavViewController.swift; sourceTree = "<group>"; };
+		2FEA8FEC1A0E9BBC008F7FFA /* DataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGenerator.swift; sourceTree = "<group>"; };
 		4D2283571A0E91A3003A15F2 /* i53de82SP5CDv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i53de82SP5CDv.jpg; sourceTree = "<group>"; };
 		4D4889261A0E087C003196F9 /* YY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D48892A1A0E087C003196F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
