@@ -221,6 +221,7 @@
 				F6884C831A0E8A03008275AB /* AddViewController.swift in Sources */,
 				2FEA8FED1A0E9BBC008F7FFA /* DataGenerator.swift in Sources */,
 				4D4889311A0E087C003196F9 /* ViewController.swift in Sources */,
+				4DC410191A0EBC1F0069E09F /* MainCell.swift in Sources */,
 				4D48892C1A0E087C003196F9 /* AppDelegate.swift in Sources */,
 				4D48895F1A0E7D75003196F9 /* Location.swift in Sources */,
 				4D4889671A0E7E3B003196F9 /* PhotoViewController.swift in Sources */,
