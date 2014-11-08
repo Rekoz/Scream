@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FEA8FEB1A0E8F26008F7FFA /* YYNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEA8FEA1A0E8F26008F7FFA /* YYNavViewController.swift */; };
+		2FEA8FED1A0E9BBC008F7FFA /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEA8FEC1A0E9BBC008F7FFA /* DataGenerator.swift */; };
 		4D48892C1A0E087C003196F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D48892B1A0E087C003196F9 /* AppDelegate.swift */; };
 		4D48892F1A0E087C003196F9 /* YY.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D48892D1A0E087C003196F9 /* YY.xcdatamodeld */; };
 		4D4889311A0E087C003196F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4889301A0E087C003196F9 /* ViewController.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FEA8FEA1A0E8F26008F7FFA /* YYNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYNavViewController.swift; sourceTree = "<group>"; };
+		2FEA8FEC1A0E9BBC008F7FFA /* DataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGenerator.swift; sourceTree = "<group>"; };
 		4D4889261A0E087C003196F9 /* YY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D48892A1A0E087C003196F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D48892B1A0E087C003196F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 		4D4889281A0E087C003196F9 /* YY */ = {
 			isa = PBXGroup;
 			children = (
+				2FEA8FEC1A0E9BBC008F7FFA /* DataGenerator.swift */,
 				4D48892B1A0E087C003196F9 /* AppDelegate.swift */,
 				4D4889301A0E087C003196F9 /* ViewController.swift */,
 				4D4889351A0E087C003196F9 /* Images.xcassets */,
@@ -95,6 +100,7 @@
 				F6884C801A0E89BB008275AB /* AddView.xib */,
 				F6884C821A0E8A03008275AB /* AddViewController.swift */,
 				4D4889641A0E7E1F003196F9 /* MainViewController.swift */,
+				2FEA8FEA1A0E8F26008F7FFA /* YYNavViewController.swift */,
 				4D48892D1A0E087C003196F9 /* YY.xcdatamodeld */,
 				4D4889601A0E7D76003196F9 /* Photo.swift */,
 				4D48895E1A0E7D75003196F9 /* Location.swift */,
@@ -197,11 +203,13 @@
 				4D4889651A0E7E1F003196F9 /* MainViewController.swift in Sources */,
 				4D4889611A0E7D76003196F9 /* Photo.swift in Sources */,
 				F6884C831A0E8A03008275AB /* AddViewController.swift in Sources */,
+				2FEA8FED1A0E9BBC008F7FFA /* DataGenerator.swift in Sources */,
 				4D4889311A0E087C003196F9 /* ViewController.swift in Sources */,
 				4D48892C1A0E087C003196F9 /* AppDelegate.swift in Sources */,
 				4D48895F1A0E7D75003196F9 /* Location.swift in Sources */,
 				4D4889671A0E7E3B003196F9 /* PhotoViewController.swift in Sources */,
 				4D48892F1A0E087C003196F9 /* YY.xcdatamodeld in Sources */,
+				2FEA8FEB1A0E8F26008F7FFA /* YYNavViewController.swift in Sources */,
 				4D4889561A0E7A1F003196F9 /* YYStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
