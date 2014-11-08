@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import UIKit
+
+class PhotoViewController:UIScrollViewController {
+    @IBOutlet weak var img1: UIImageView!
+    
+}
+
