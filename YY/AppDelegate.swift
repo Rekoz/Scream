@@ -89,7 +89,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         var managedObjectContext = NSManagedObjectContext()
         managedObjectContext.persistentStoreCoordinator = coordinator
-        return managedObjectContext
+        return managedObjectContext`
     }()
 
     // MARK: - Core Data Saving support
