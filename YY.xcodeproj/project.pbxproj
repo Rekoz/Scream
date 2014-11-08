@@ -29,6 +29,7 @@
 		4DC410191A0EBC1F0069E09F /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC410181A0EBC1F0069E09F /* MainCell.swift */; };
 		F6884C811A0E89BB008275AB /* AddView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6884C801A0E89BB008275AB /* AddView.xib */; };
 		F6884C831A0E8A03008275AB /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6884C821A0E8A03008275AB /* AddViewController.swift */; };
+		F6884C8B1A0EBB0B008275AB /* AddView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6884C8A1A0EBB0B008275AB /* AddView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		4DC410181A0EBC1F0069E09F /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		F6884C801A0E89BB008275AB /* AddView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddView.xib; sourceTree = "<group>"; };
 		F6884C821A0E8A03008275AB /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		F6884C8A1A0EBB0B008275AB /* AddView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +109,10 @@
 				4D4889351A0E087C003196F9 /* Images.xcassets */,
 				4D4889371A0E087C003196F9 /* LaunchScreen.xib */,
 				4D4889621A0E7E09003196F9 /* MainView.xib */,
-				4D4889661A0E7E3B003196F9 /* PhotoViewController.swift */,
+				4D4889641A0E7E1F003196F9 /* MainViewController.swift */,
 				4D4889681A0E7E44003196F9 /* PhotoView.xib */,
-				F6884C801A0E89BB008275AB /* AddView.xib */,
+				4D4889661A0E7E3B003196F9 /* PhotoViewController.swift */,
+				F6884C8A1A0EBB0B008275AB /* AddView.xib */,
 				F6884C821A0E8A03008275AB /* AddViewController.swift */,
 				4D4889641A0E7E1F003196F9 /* MainViewController.swift */,
 				4DC410161A0EBBAE0069E09F /* MainCell.xib */,
@@ -202,9 +205,8 @@
 				4D2283581A0E91A3003A15F2 /* i53de82SP5CDv.jpg in Resources */,
 				4D4889631A0E7E09003196F9 /* MainView.xib in Resources */,
 				4D4889391A0E087C003196F9 /* LaunchScreen.xib in Resources */,
-				F6884C811A0E89BB008275AB /* AddView.xib in Resources */,
 				4D4889361A0E087C003196F9 /* Images.xcassets in Resources */,
-				4DC410171A0EBBAE0069E09F /* MainCell.xib in Resources */,
+				F6884C8B1A0EBB0B008275AB /* AddView.xib in Resources */,
 				4D4889691A0E7E44003196F9 /* PhotoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
