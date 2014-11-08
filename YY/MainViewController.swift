@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 import CoreData
-import Location
-import Photo
-import YYNavViewController
+//import Location
+//import Photo
+//import YYNavViewController
 import CoreLocation
 
 class MainViewController: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
-    var currentLocation:CLLocation
+    var currentLocation:CLLocation = CLLocation()
     var sortedLocations = [Location]()
     
     lazy var managedObjectContext : NSManagedObjectContext? = {
@@ -28,6 +28,15 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
             return nil
         }
         }()
+
+    override init() {
+        super.init()
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        //fatalError("init(coder:) has not been implemented")
+        super.init(coder:aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,16 +60,16 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         currentLocation = manager.location
-        sortedLocations = sorted(sortedLocations) {
-            (obj1, obj2) in
+        sortedLocations = sorted(sortedLocations, { (obj1, obj2) -> Bool in
             let l1 = obj1 as Location
             let l2 = obj2 as Location
-            var oneDistance = currentLocation.distanceFromLocation(CLLocation(latitude: l1.locationX.doubleValue, longitude: l1.locationY.doubleValue))
-            var twoDistance = currentLocation.distanceFromLocation(CLLocation(latitude: l2.locationX.doubleValue, longitude: l2.locationY.doubleValue))
-            if (oneDistance < twoDistance) { return NSOrderedAscending }
-            if (oneDistance > twoDistance) { return NSOrderedDescending }
-            return NSOrderedSame
-        }
+            var oneDistance = self.currentLocation.distanceFromLocation(CLLocation(latitude: l1.locationX.doubleValue, longitude: l1.locationY.doubleValue))
+            var twoDistance = self.currentLocation.distanceFromLocation(CLLocation(latitude: l2.locationX.doubleValue, longitude: l2.locationY.doubleValue))
+            //if (oneDistance < twoDistance) { return NSOrderedAscending }
+            //if (oneDistance > twoDistance) { return NSOrderedDescending }
+            //return NSOrderedSame
+            return oneDistance > twoDistance
+        })
         
             /*
             CLGeocoder().reverseGeocodeLocation(manager.location, completionHandler: {(placemarks, error)->Void in
@@ -103,7 +112,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     func fetchLocations() {
         let fetchRequest = NSFetchRequest(entityName: "Location")
         if let fetchResults = managedObjectContext!.executeFetchRequest(fetchRequest, error: nil) as? [Location] {
-            allLocations = fetchResults
+            self.sortedLocations = fetchResults
         }
     }
     

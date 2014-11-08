@@ -8,7 +8,16 @@
 
 import Foundation
 import UIKit
+//import MainViewController
 
-class YYNavViewController: UINavigationViewController {
-    
+class YYNavViewController: UINavigationController {
+    override init() {
+        super.init(rootViewController: MainViewController())
+        //super.initWithRootViewController(MainViewController())
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        //fatalError("init(coder:) has not been implemented")
+        super.init(coder:aDecoder)
+    }
 }
