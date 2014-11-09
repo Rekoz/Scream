@@ -54,6 +54,10 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
         super.init()
     }
 
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: "Mainview.xib", bundle: nibBundleOrNil)
+    }
+    
     required init(coder aDecoder: NSCoder) {
         //fatalError("init(coder:) has not been implemented")
         super.init(coder:aDecoder)

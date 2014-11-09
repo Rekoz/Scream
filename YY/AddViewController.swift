@@ -25,6 +25,10 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         })
 
     }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: "Addview.xib", bundle: nibBundleOrNil)
+    }
 
     required init(coder: NSCoder) {
         super.init(coder: coder)
