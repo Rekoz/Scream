@@ -6,12 +6,11 @@
 //
 //
 
-import Foundation
 import UIKit
 import CoreData
 import CoreLocation
 
-class MainViewController: UIViewController, CLLocationManagerDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
+class MainViewController: UIViewController, CLLocationManagerDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     let locationManager = CLLocationManager()
     var currentLocation:CLLocation = CLLocation()
     var sortedPhotos = [Photo]()

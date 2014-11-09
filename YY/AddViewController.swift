@@ -8,10 +8,26 @@
 
 import UIKit
 
-class AddViewController: UIImagePickerControllerDelegate {
-    
-    @IBAction func cancel(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    var imagePickerController = UIImagePickerController()
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!) {
+        let selectedImage : UIImage = image
     }
-    // cancel button addView ???exit
+    
+    override init()
+    {
+        super.init()
+        imagePickerController.delegate = self
+        imagePickerController.sourceType = .SavedPhotosAlbum
+        imagePickerController.allowsEditing = true
+        self.presentViewController(imagePickerController, animated: true, completion: { imageP in
+            
+        })
+
+    }
+
+    required init(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
 }
