@@ -73,7 +73,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
         self.collectionView.registerClass(MainCell.self, forCellWithReuseIdentifier: "Cell")
 
         self.navigationItem.title = "SCREAM"
-        //self.navigationItem.leftBarButtonItem = UIBarButtonItem(BarButtonSystemItem: UIBarButtonSystemItemDone, target:self, action:nil)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: Selector("openAdd"))
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -93,9 +92,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
             let l2 = obj2 as Photo
             var oneDistance = self.currentLocation.distanceFromLocation(CLLocation(latitude: l1.locationX.doubleValue, longitude: l1.locationY.doubleValue))
             var twoDistance = self.currentLocation.distanceFromLocation(CLLocation(latitude: l2.locationX.doubleValue, longitude: l2.locationY.doubleValue))
-            //if (oneDistance < twoDistance) { return NSOrderedAscending }
-            //if (oneDistance > twoDistance) { return NSOrderedDescending }
-            //return NSOrderedSame
             return oneDistance < twoDistance
         })
     }
