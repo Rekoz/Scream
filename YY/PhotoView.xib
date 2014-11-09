@@ -6,8 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoViewController" customModule="YY" customModuleProvider="target">
             <connections>
-                <outlet property="buttonSpeakClicked" destination="9iW-8V-y7w" id="pOI-8c-cwZ"/>
-                <outlet property="img" destination="ok0-pX-YJ7" id="Ivk-EZ-HAp"/>
+                <outlet property="img" destination="ok0-pX-YJ7" id="sY2-YW-CRM"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Vq2-xK-OcS"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -24,13 +24,13 @@
                     <state key="normal" title="Speak">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="buttonSubmitClicked:" destination="-1" eventType="touchDown" id="SkA-ft-sjh"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <connections>
-                <outlet property="delegate" destination="-1" id="AOe-Ue-Rr1"/>
-            </connections>
             <point key="canvasLocation" x="230.5" y="629.5"/>
         </view>
     </objects>

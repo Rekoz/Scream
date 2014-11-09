@@ -16,6 +16,11 @@ class PhotoViewController:UIViewController {
         super.init()
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        img.image = UIImage(data: photo.photo)
+    }
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
