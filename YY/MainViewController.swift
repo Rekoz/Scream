@@ -63,7 +63,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        DataGenerator.generate(managedObjectContext!)
+        //DataGenerator.generate(managedObjectContext!)
         self.collectionView.setInitialCellTransformBlock(ADLivelyTransformFlip)
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         appDelegate.saveContext()
