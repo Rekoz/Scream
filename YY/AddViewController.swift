@@ -51,7 +51,7 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     }
     @IBAction func pitchSliderValueChanged(sender: AnyObject) {
         var pitchValue = pitchSlider.value
-        pitchValueLabel.text = "\(Int(pitchValue))"
+        pitchValueLabel.text = "\(Int(pitchValue))%"
     }
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
