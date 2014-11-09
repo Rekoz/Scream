@@ -56,14 +56,11 @@
                         <action selector="addSubmit:" destination="-1" eventType="touchDown" id="wL5-v7-yyr"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyX-T3-JLv">
-                    <rect key="frame" x="27" y="21" width="64" height="30"/>
-                    <state key="normal" title="Submit">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o98-3U-1DL">
+                    <rect key="frame" x="27" y="21" width="46" height="30"/>
+                    <state key="normal" title="Button">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <connections>
-                        <action selector="addSubmit:" destination="-1" eventType="touchDown" id="f2A-PX-N3k"/>
-                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
