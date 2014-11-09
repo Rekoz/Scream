@@ -11,16 +11,10 @@ import UIKit
 import CoreData
 
 class DataGenerator: NSObject {
-    lazy var managedObjectContext : NSManagedObjectContext? = {
-        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-        if let managedObjectContext = appDelegate.managedObjectContext {
-            return managedObjectContext
+    class func generate(moc: NSManagedObjectContext) {
+        //UIImage(contentsOfFile: "")
+        for i in 0...20 {
+            Photo.createInManagedObjectContext(moc, name: "123", photo: NSData(), voice: "Hello", pitch: 100, locationX: 1, locationY: 2)
         }
-        else {
-            return nil
-        }
-        }()
-    class func generate() {
-        
     }
 }
