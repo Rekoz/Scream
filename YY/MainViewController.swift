@@ -8,15 +8,12 @@
 
 import UIKit
 import CoreData
-//import Location
-//import Photo
-//import YYNavViewController
 import CoreLocation
 
 class MainViewController: UIViewController, CLLocationManagerDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     let locationManager = CLLocationManager()
     var currentLocation:CLLocation = CLLocation()
-    var sortedLocations = [Location]()
+    var sortedPhotos = [Photo]()
     //var navigationController:UINavigationController
     
     lazy var managedObjectContext : NSManagedObjectContext? = {
@@ -28,7 +25,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
             return nil
         }
         }()
-
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
@@ -73,62 +69,32 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         currentLocation = manager.location
-        sortedLocations = sorted(sortedLocations, { (obj1, obj2) -> Bool in
-            let l1 = obj1 as Location
-            let l2 = obj2 as Location
+        sortedPhotos = sorted(sortedPhotos, { (obj1, obj2) -> Bool in
+            let l1 = obj1 as Photo
+            let l2 = obj2 as Photo
             var oneDistance = self.currentLocation.distanceFromLocation(CLLocation(latitude: l1.locationX.doubleValue, longitude: l1.locationY.doubleValue))
             var twoDistance = self.currentLocation.distanceFromLocation(CLLocation(latitude: l2.locationX.doubleValue, longitude: l2.locationY.doubleValue))
             //if (oneDistance < twoDistance) { return NSOrderedAscending }
             //if (oneDistance > twoDistance) { return NSOrderedDescending }
             //return NSOrderedSame
-            return oneDistance > twoDistance
+            return oneDistance < twoDistance
         })
-        
-            /*
-            CLGeocoder().reverseGeocodeLocation(manager.location, completionHandler: {(placemarks, error)->Void in
-            
-            if (error != nil) {
-                println("Reverse geocoder failed with error" + error.localizedDescription)
-                return
-            }
-            
-            if placemarks.count > 0 {
-                let pm = placemarks[0] as CLPlacemark
-                self.displayLocationInfo(pm)
-            } else {
-                println("Problem with the data received from geocoder")
-            }
-        })*/
     }
-    
-    /*
-    func displayLocationInfo(placemark: CLPlacemark?) {
-        if let containsPlacemark = placemark {
-            //stop updating location to save battery life
-            locationManager.stopUpdatingLocation()
-            let locality = (containsPlacemark.locality != nil) ? containsPlacemark.locality : ""
-            let postalCode = (containsPlacemark.postalCode != nil) ? containsPlacemark.postalCode : ""
-            let administrativeArea = (containsPlacemark.administrativeArea != nil) ? containsPlacemark.administrativeArea : ""
-            let country = (containsPlacemark.country != nil) ? containsPlacemark.country : ""
-            println(locality)
-            println(postalCode)
-            println(administrativeArea)
-            println(country)
-        }
-        
-    }*/
     
     func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
         println("Error while updating location " + error.localizedDescription)
     }
     
     func fetchLocations() {
-        let fetchRequest = NSFetchRequest(entityName: "Location")
-        if let fetchResults = managedObjectContext!.executeFetchRequest(fetchRequest, error: nil) as? [Location] {
-            self.sortedLocations = fetchResults
+        let fetchRequest = NSFetchRequest(entityName: "Photo")
+        if let fetchResults = managedObjectContext!.executeFetchRequest(fetchRequest, error: nil) as? [Photo] {
+            self.sortedPhotos = fetchResults
         }
     }
     
+    @IBAction func addButtonPressed(sender: AnyObject) {
+        self.navigationController?.pushViewController(AddViewController(), animated: true)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

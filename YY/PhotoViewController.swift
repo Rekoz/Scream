@@ -12,6 +12,11 @@ class PhotoViewController:UIViewController {
         //fatalError("init(coder:) has not been implemented")
     }
     
+    override init()
+    {
+        super.init()
+    }
+    
     
     @IBAction func buttonSpeakClicked(sender: UIButton) {
         var mySpeechSynthesizer:AVSpeechSynthesizer = AVSpeechSynthesizer()

@@ -13,15 +13,21 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!) {
         let selectedImage : UIImage = image
     }
-
-    required init(coder: NSCoder) {
-        super.init(coder: coder)
+    
+    override init()
+    {
+        super.init()
         imagePickerController.delegate = self
         imagePickerController.sourceType = .SavedPhotosAlbum
         imagePickerController.allowsEditing = true
         self.presentViewController(imagePickerController, animated: true, completion: { imageP in
             
         })
+
+    }
+
+    required init(coder: NSCoder) {
+        super.init(coder: coder)
     }
     
 }
