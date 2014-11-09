@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddViewController" customModule="YY" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddViewController" customModule="Scream" customModuleProvider="target">
             <connections>
                 <outlet property="pitchSlider" destination="hLC-Tj-TkB" id="zzs-eo-5uO"/>
                 <outlet property="pitchValueLabel" destination="d8E-uI-YMW" id="wDD-Gw-8BC"/>
@@ -34,6 +34,10 @@
                 </imageView>
                 <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uA2-Hz-Sjd">
                     <rect key="frame" x="8" y="497" width="359" height="162"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="O2e-h8-2To"/>
+                        <outlet property="delegate" destination="-1" id="TCy-Jw-blh"/>
+                    </connections>
                 </pickerView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hy9-3B-9TB">
                     <rect key="frame" x="303" y="629" width="64" height="30"/>

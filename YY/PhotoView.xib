@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoViewController" customModule="YY" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoViewController" customModule="Scream" customModuleProvider="target">
             <connections>
                 <outlet property="img" destination="JD8-Qp-vYn" id="rkM-qa-oGQ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Gq3-mn-EIu"/>
@@ -30,7 +30,7 @@
                     </subviews>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JD8-Qp-vYn">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JD8-Qp-vYn">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="457"/>
                 </imageView>
             </subviews>

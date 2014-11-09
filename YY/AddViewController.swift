@@ -19,22 +19,23 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     let pickerData = ["after 1 min", "after 5 min", "after 15 min", "after 30 min", "after 1 h", "after 8 h", "after 1 day", "after 1 week"]
     
     // properties
-    override init()
+    /*override init()
     {
         super.init()
-        imagePickerController.delegate = self
-        imagePickerController.sourceType = .SavedPhotosAlbum
-        imagePickerController.allowsEditing = true
-        self.presentViewController(imagePickerController, animated: true, completion: { imageP in
-            
-        })
-    }
+    }*/
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        imagePickerController.delegate = self
+        imagePickerController.sourceType = .SavedPhotosAlbum
+        imagePickerController.allowsEditing = true
+        self.presentViewController(imagePickerController, animated: true, completion: { imageP in
+            
+        })
     }
     
     // initializers
@@ -49,6 +50,7 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         mySpeechUtterance.pitchMultiplier = pitchValue
         mySpeechSynthesizer.speakUtterance(mySpeechUtterance)
     }
+    
     @IBAction func pitchSliderValueChanged(sender: AnyObject) {
         var pitchValue = pitchSlider.value
         pitchValueLabel.text = "\(Int(pitchValue))%"
@@ -62,5 +64,16 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
         return pickerData[row]
     }
+    
+    override func viewDidLoad() {
+        self.navigationItem.title = "Add your scream"
+        var bbi = UIBarButtonItem(title: "Send", style: UIBarButtonItemStyle.Done, target: self, action: Selector("returnToPrevious"))
+        self.navigationItem.rightBarButtonItem = bbi
+            //UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Play, target: self, action: Selector("addSubmit"))
+    }
     // methods
+    
+    func returnToPrevious() {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
 }
