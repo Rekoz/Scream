@@ -17,7 +17,7 @@ class PhotoViewController:UIViewController {
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: "Photoview.xib", bundle: nibBundleOrNil)
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
     @IBAction func buttonSpeakClicked(sender: UIButton) {

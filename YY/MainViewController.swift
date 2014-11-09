@@ -16,6 +16,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
     var sortedPhotos = [Photo]()
     //var navigationController:UINavigationController
     
+    @IBOutlet weak var collectionView: UICollectionView!
     lazy var managedObjectContext : NSManagedObjectContext? = {
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         if let managedObjectContext = appDelegate.managedObjectContext {
@@ -50,12 +51,12 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
         //deselect
     }
     
-    override init() {
+    /*override init() {
         super.init()
-    }
+    }*/
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: "Mainview.xib", bundle: nibBundleOrNil)
+        super.init(nibName: "MainView", bundle: nibBundleOrNil)
     }
     
     required init(coder aDecoder: NSCoder) {
@@ -65,10 +66,23 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var nib = UINib(nibName:"MainCell", bundle:nil)
+        self.collectionView.registerNib(nib, forCellWithReuseIdentifier:"MainCell");
+        
+        
+        self.navigationItem.title = "SCREAM"
+        //self.navigationItem.leftBarButtonItem = UIBarButtonItem(BarButtonSystemItem: UIBarButtonSystemItemDone, target:self, action:nil)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: Selector("openAdd"))
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
         fetchLocations()
+    }
+    
+    func openAdd() {
+        var avc = AddViewController(nibName: "AddView", bundle: nil)
+        self.navigationController?.pushViewController(avc, animated: true)
     }
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
