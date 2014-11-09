@@ -33,8 +33,6 @@
 		4D4889651A0E7E1F003196F9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4889641A0E7E1F003196F9 /* MainViewController.swift */; };
 		4D4889671A0E7E3B003196F9 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4889661A0E7E3B003196F9 /* PhotoViewController.swift */; };
 		4D4889691A0E7E44003196F9 /* PhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4889681A0E7E44003196F9 /* PhotoView.xib */; };
-		4D7C5BB21A0EEC04004887E2 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C5BB11A0EEC04004887E2 /* MainCell.swift */; };
-		4DC410171A0EBBAE0069E09F /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC410161A0EBBAE0069E09F /* MainCell.xib */; };
 		F46C8BBC1A0EF5420028F538 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46C8BBB1A0EF5420028F538 /* AudioToolbox.framework */; };
 		F46C8BC01A0F2A0F0028F538 /* IMG_2378.PNG.png in Resources */ = {isa = PBXBuildFile; fileRef = F46C8BBD1A0F2A0F0028F538 /* IMG_2378.PNG.png */; };
 		F46C8BC11A0F2A0F0028F538 /* IMG_2379.PNG.png in Resources */ = {isa = PBXBuildFile; fileRef = F46C8BBE1A0F2A0F0028F538 /* IMG_2379.PNG.png */; };
@@ -74,8 +72,6 @@
 		4D4889641A0E7E1F003196F9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4D4889661A0E7E3B003196F9 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		4D4889681A0E7E44003196F9 /* PhotoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoView.xib; sourceTree = "<group>"; };
-		4D7C5BB11A0EEC04004887E2 /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
-		4DC410161A0EBBAE0069E09F /* MainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCell.xib; sourceTree = "<group>"; };
 		F46C8BBB1A0EF5420028F538 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
 		F46C8BBD1A0F2A0F0028F538 /* IMG_2378.PNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_2378.PNG.png; sourceTree = "<group>"; };
 		F46C8BBE1A0F2A0F0028F538 /* IMG_2379.PNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_2379.PNG.png; sourceTree = "<group>"; };
@@ -262,7 +258,6 @@
 				2F5CC89D1A0EE99000473A3A /* IMG_0001.JPG in Resources */,
 				2F5CC8971A0EE99000473A3A /* IMG_0006.JPG in Resources */,
 				4D4889361A0E087C003196F9 /* Images.xcassets in Resources */,
-				4DC410171A0EBBAE0069E09F /* MainCell.xib in Resources */,
 				F46C8BC21A0F2A0F0028F538 /* IMG_2380.PNG.png in Resources */,
 				2F5CC8951A0EE99000473A3A /* IMG_2165.JPG in Resources */,
 				F6884C8B1A0EBB0B008275AB /* AddView.xib in Resources */,
