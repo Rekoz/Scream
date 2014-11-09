@@ -21,7 +21,6 @@
 		4D2283581A0E91A3003A15F2 /* i53de82SP5CDv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D2283571A0E91A3003A15F2 /* i53de82SP5CDv.jpg */; };
 		4D48892C1A0E087C003196F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D48892B1A0E087C003196F9 /* AppDelegate.swift */; };
 		4D48892F1A0E087C003196F9 /* YY.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D48892D1A0E087C003196F9 /* YY.xcdatamodeld */; };
-		4D4889311A0E087C003196F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4889301A0E087C003196F9 /* ViewController.swift */; };
 		4D4889361A0E087C003196F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D4889351A0E087C003196F9 /* Images.xcassets */; };
 		4D48894D1A0E109B003196F9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D48894C1A0E109B003196F9 /* AVFoundation.framework */; };
 		4D48894F1A0E10A2003196F9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D48894E1A0E10A2003196F9 /* CoreLocation.framework */; };
@@ -32,6 +31,7 @@
 		4D4889651A0E7E1F003196F9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4889641A0E7E1F003196F9 /* MainViewController.swift */; };
 		4D4889671A0E7E3B003196F9 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4889661A0E7E3B003196F9 /* PhotoViewController.swift */; };
 		4D4889691A0E7E44003196F9 /* PhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4889681A0E7E44003196F9 /* PhotoView.xib */; };
+		4D7C5BB21A0EEC04004887E2 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C5BB11A0EEC04004887E2 /* MainCell.swift */; };
 		4DC410171A0EBBAE0069E09F /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC410161A0EBBAE0069E09F /* MainCell.xib */; };
 		F6884C831A0E8A03008275AB /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6884C821A0E8A03008275AB /* AddViewController.swift */; };
 		F6884C8B1A0EBB0B008275AB /* AddView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6884C8A1A0EBB0B008275AB /* AddView.xib */; };
@@ -54,7 +54,6 @@
 		4D48892A1A0E087C003196F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D48892B1A0E087C003196F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D48892E1A0E087C003196F9 /* YY.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YY.xcdatamodel; sourceTree = "<group>"; };
-		4D4889301A0E087C003196F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D4889351A0E087C003196F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4D48894C1A0E109B003196F9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		4D48894E1A0E10A2003196F9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
@@ -65,7 +64,9 @@
 		4D4889641A0E7E1F003196F9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4D4889661A0E7E3B003196F9 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		4D4889681A0E7E44003196F9 /* PhotoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoView.xib; sourceTree = "<group>"; };
+		4D7C5BB11A0EEC04004887E2 /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		4DC410161A0EBBAE0069E09F /* MainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCell.xib; sourceTree = "<group>"; };
+		4DC4101A1A0EE0B00069E09F /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/AVKit.framework; sourceTree = DEVELOPER_DIR; };
 		F6884C821A0E8A03008275AB /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		F6884C8A1A0EBB0B008275AB /* AddView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,7 +133,6 @@
 				2F5CC88B1A0EE81800473A3A /* PIctures */,
 				2FEA8FEC1A0E9BBC008F7FFA /* DataGenerator.swift */,
 				4D48892B1A0E087C003196F9 /* AppDelegate.swift */,
-				4D4889301A0E087C003196F9 /* ViewController.swift */,
 				4D4889351A0E087C003196F9 /* Images.xcassets */,
 				4D4889621A0E7E09003196F9 /* MainView.xib */,
 				4D4889681A0E7E44003196F9 /* PhotoView.xib */,
@@ -141,6 +141,7 @@
 				F6884C821A0E8A03008275AB /* AddViewController.swift */,
 				4D4889641A0E7E1F003196F9 /* MainViewController.swift */,
 				4DC410161A0EBBAE0069E09F /* MainCell.xib */,
+				4D7C5BB11A0EEC04004887E2 /* MainCell.swift */,
 				2FEA8FEA1A0E8F26008F7FFA /* YYNavViewController.swift */,
 				4D48892D1A0E087C003196F9 /* YY.xcdatamodeld */,
 				4D4889601A0E7D76003196F9 /* Photo.swift */,
@@ -254,11 +255,11 @@
 				4D4889611A0E7D76003196F9 /* Photo.swift in Sources */,
 				F6884C831A0E8A03008275AB /* AddViewController.swift in Sources */,
 				2FEA8FED1A0E9BBC008F7FFA /* DataGenerator.swift in Sources */,
-				4D4889311A0E087C003196F9 /* ViewController.swift in Sources */,
 				4D48892C1A0E087C003196F9 /* AppDelegate.swift in Sources */,
 				4D4889671A0E7E3B003196F9 /* PhotoViewController.swift in Sources */,
 				4D48892F1A0E087C003196F9 /* YY.xcdatamodeld in Sources */,
 				2FEA8FEB1A0E8F26008F7FFA /* YYNavViewController.swift in Sources */,
+				4D7C5BB21A0EEC04004887E2 /* MainCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
