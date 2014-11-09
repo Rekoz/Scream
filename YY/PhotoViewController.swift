@@ -20,7 +20,7 @@ class PhotoViewController:UIViewController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    @IBAction func buttonSpeakClicked(sender: UIButton) {
+    @IBAction func buttonSubmitClicked(sender: UIButton) {
         var mySpeechSynthesizer:AVSpeechSynthesizer = AVSpeechSynthesizer()
         var myString:String = "This is the phrase to say"
         var mySpeechUtterance:AVSpeechUtterance = AVSpeechUtterance(string:myString)
