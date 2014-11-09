@@ -67,7 +67,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Photo.createInManagedObjectContext(managedObjectContext!, name: "123", photo: NSData(), voice: "Hello", pitch: 100, locationX: 1, locationY: 2)
         //DataGenerator.generate(managedObjectContext!)
 
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate

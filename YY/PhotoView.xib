@@ -4,7 +4,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoViewController" customModule="YY" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoViewController" customModule="YY" customModuleProvider="target">
+            <connections>
+                <outlet property="img" destination="JD8-Qp-vYn" id="rkM-qa-oGQ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Gq3-mn-EIu"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UIScrollView">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
