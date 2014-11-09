@@ -29,7 +29,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
         }()
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 12
+        return 50
     }
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
@@ -38,13 +38,13 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as UICollectionViewCell
         
-        cell.backgroundView = UIImageView(image: UIImage(contentsOfFile: NSBundle.mainBundle().pathForResource("IMG_2165", ofType: "JPG")!))
+        cell.backgroundView = UIImageView(image: UIImage(data: sortedPhotos[indexPath.row].photo))
         return cell
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         var pvc = PhotoViewController(nibName: "PhotoView", bundle: nil)
-        pvc.photo = sortedPhotos[indexPath.length]
+        pvc.photo = sortedPhotos[indexPath.row]
         self.navigationController?.pushViewController(pvc, animated: true)
     }
     
@@ -63,7 +63,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //DataGenerator.generate(managedObjectContext!)
+        DataGenerator.generate(managedObjectContext!)
         self.collectionView.setInitialCellTransformBlock(ADLivelyTransformFlip)
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         appDelegate.saveContext()

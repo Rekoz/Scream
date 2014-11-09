@@ -38,6 +38,11 @@
 		F45B13BC1A0F41A900241733 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45B13BB1A0F41A900241733 /* QuartzCore.framework */; };
 		F45B13C11A0F43D000241733 /* SAMath.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B13BE1A0F43D000241733 /* SAMath.m */; };
 		F45B13C21A0F43D000241733 /* SAMultisectorControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B13C01A0F43D000241733 /* SAMultisectorControl.m */; };
+		F45B13C81A0F63F500241733 /* IMG_3300.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F45B13C31A0F63F500241733 /* IMG_3300.JPG */; };
+		F45B13C91A0F63F500241733 /* IMG_3467.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F45B13C41A0F63F500241733 /* IMG_3467.JPG */; };
+		F45B13CA1A0F63F500241733 /* IMG_3469.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F45B13C51A0F63F500241733 /* IMG_3469.JPG */; };
+		F45B13CB1A0F63F500241733 /* IMG_3474.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F45B13C61A0F63F500241733 /* IMG_3474.JPG */; };
+		F45B13CC1A0F63F500241733 /* IMG_3485.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F45B13C71A0F63F500241733 /* IMG_3485.JPG */; };
 		F46C8BBC1A0EF5420028F538 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46C8BBB1A0EF5420028F538 /* AudioToolbox.framework */; };
 		F46C8BC01A0F2A0F0028F538 /* IMG_2378.PNG.png in Resources */ = {isa = PBXBuildFile; fileRef = F46C8BBD1A0F2A0F0028F538 /* IMG_2378.PNG.png */; };
 		F46C8BC11A0F2A0F0028F538 /* IMG_2379.PNG.png in Resources */ = {isa = PBXBuildFile; fileRef = F46C8BBE1A0F2A0F0028F538 /* IMG_2379.PNG.png */; };
@@ -86,6 +91,11 @@
 		F45B13BE1A0F43D000241733 /* SAMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMath.m; sourceTree = "<group>"; };
 		F45B13BF1A0F43D000241733 /* SAMultisectorControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMultisectorControl.h; sourceTree = "<group>"; };
 		F45B13C01A0F43D000241733 /* SAMultisectorControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMultisectorControl.m; sourceTree = "<group>"; };
+		F45B13C31A0F63F500241733 /* IMG_3300.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3300.JPG; sourceTree = "<group>"; };
+		F45B13C41A0F63F500241733 /* IMG_3467.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3467.JPG; sourceTree = "<group>"; };
+		F45B13C51A0F63F500241733 /* IMG_3469.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3469.JPG; sourceTree = "<group>"; };
+		F45B13C61A0F63F500241733 /* IMG_3474.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3474.JPG; sourceTree = "<group>"; };
+		F45B13C71A0F63F500241733 /* IMG_3485.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3485.JPG; sourceTree = "<group>"; };
 		F46C8BBB1A0EF5420028F538 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
 		F46C8BBD1A0F2A0F0028F538 /* IMG_2378.PNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_2378.PNG.png; sourceTree = "<group>"; };
 		F46C8BBE1A0F2A0F0028F538 /* IMG_2379.PNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_2379.PNG.png; sourceTree = "<group>"; };
@@ -117,17 +127,22 @@
 		2F5CC88B1A0EE81800473A3A /* PIctures */ = {
 			isa = PBXGroup;
 			children = (
+				F45B13C31A0F63F500241733 /* IMG_3300.JPG */,
+				F45B13C41A0F63F500241733 /* IMG_3467.JPG */,
+				F45B13C51A0F63F500241733 /* IMG_3469.JPG */,
+				F45B13C61A0F63F500241733 /* IMG_3474.JPG */,
+				F45B13C71A0F63F500241733 /* IMG_3485.JPG */,
+				2F5CC88D1A0EE99000473A3A /* IMG_2373.JPG */,
+				2F5CC88F1A0EE99000473A3A /* IMG_2377.JPG */,
+				2F5CC8921A0EE99000473A3A /* IMG_2376.JPG */,
+				2F5CC8931A0EE99000473A3A /* IMG_2348.JPG */,
 				F46C8BBD1A0F2A0F0028F538 /* IMG_2378.PNG.png */,
 				F46C8BBE1A0F2A0F0028F538 /* IMG_2379.PNG.png */,
 				F46C8BBF1A0F2A0F0028F538 /* IMG_2380.PNG.png */,
 				2F5CC88C1A0EE99000473A3A /* IMG_2165.JPG */,
-				2F5CC88D1A0EE99000473A3A /* IMG_2373.JPG */,
 				2F5CC88E1A0EE99000473A3A /* IMG_0006.JPG */,
-				2F5CC88F1A0EE99000473A3A /* IMG_2377.JPG */,
 				2F5CC8901A0EE99000473A3A /* IMG_2139.JPG */,
 				2F5CC8911A0EE99000473A3A /* IMG_2159.JPG */,
-				2F5CC8921A0EE99000473A3A /* IMG_2376.JPG */,
-				2F5CC8931A0EE99000473A3A /* IMG_2348.JPG */,
 				2F5CC8941A0EE99000473A3A /* IMG_0001.JPG */,
 			);
 			name = PIctures;
@@ -279,11 +294,14 @@
 				4D2283581A0E91A3003A15F2 /* i53de82SP5CDv.jpg in Resources */,
 				2FF7D7FE1A0F2EC100CD02E8 /* MainCell.xib in Resources */,
 				2F5CC89B1A0EE99000473A3A /* IMG_2376.JPG in Resources */,
+				F45B13C91A0F63F500241733 /* IMG_3467.JPG in Resources */,
 				2F5CC89C1A0EE99000473A3A /* IMG_2348.JPG in Resources */,
 				4D4889631A0E7E09003196F9 /* MainView.xib in Resources */,
 				2F5CC8991A0EE99000473A3A /* IMG_2139.JPG in Resources */,
 				2F5CC8981A0EE99000473A3A /* IMG_2377.JPG in Resources */,
 				2F5CC8961A0EE99000473A3A /* IMG_2373.JPG in Resources */,
+				F45B13CC1A0F63F500241733 /* IMG_3485.JPG in Resources */,
+				F45B13CB1A0F63F500241733 /* IMG_3474.JPG in Resources */,
 				2F5CC89A1A0EE99000473A3A /* IMG_2159.JPG in Resources */,
 				2F5CC89D1A0EE99000473A3A /* IMG_0001.JPG in Resources */,
 				2F5CC8971A0EE99000473A3A /* IMG_0006.JPG in Resources */,
@@ -291,6 +309,8 @@
 				F46C8BC21A0F2A0F0028F538 /* IMG_2380.PNG.png in Resources */,
 				2F5CC8951A0EE99000473A3A /* IMG_2165.JPG in Resources */,
 				F6884C8B1A0EBB0B008275AB /* AddView.xib in Resources */,
+				F45B13C81A0F63F500241733 /* IMG_3300.JPG in Resources */,
+				F45B13CA1A0F63F500241733 /* IMG_3469.JPG in Resources */,
 				4D4889691A0E7E44003196F9 /* PhotoView.xib in Resources */,
 				F46C8BC11A0F2A0F0028F538 /* IMG_2379.PNG.png in Resources */,
 			);

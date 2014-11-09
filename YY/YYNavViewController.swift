@@ -14,8 +14,6 @@ class YYNavViewController: UINavigationController {
     override init() {
         var mvc = MainViewController(nibName: nil, bundle: nil)
         super.init(rootViewController: mvc)
-        //var t = temp()
-        //super.init(rootViewController:t)
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
