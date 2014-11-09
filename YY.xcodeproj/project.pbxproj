@@ -75,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DC4101B1A0EE0B00069E09F /* AVKit.framework in Frameworks */,
 				4D4889531A0E10B3003196F9 /* CoreImage.framework in Frameworks */,
 				4D4889511A0E10A7003196F9 /* CoreData.framework in Frameworks */,
 				4D48894F1A0E10A2003196F9 /* CoreLocation.framework in Frameworks */,
@@ -162,7 +161,6 @@
 		4D4889541A0E10C0003196F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4DC4101A1A0EE0B00069E09F /* AVKit.framework */,
 				4D4889521A0E10B3003196F9 /* CoreImage.framework */,
 				4D4889501A0E10A7003196F9 /* CoreData.framework */,
 				4D48894E1A0E10A2003196F9 /* CoreLocation.framework */,
@@ -237,7 +235,6 @@
 				2F5CC89A1A0EE99000473A3A /* IMG_2159.JPG in Resources */,
 				2F5CC89D1A0EE99000473A3A /* IMG_0001.JPG in Resources */,
 				2F5CC8971A0EE99000473A3A /* IMG_0006.JPG in Resources */,
-				4D4889391A0E087C003196F9 /* LaunchScreen.xib in Resources */,
 				4D4889361A0E087C003196F9 /* Images.xcassets in Resources */,
 				4DC410171A0EBBAE0069E09F /* MainCell.xib in Resources */,
 				2F5CC8951A0EE99000473A3A /* IMG_2165.JPG in Resources */,

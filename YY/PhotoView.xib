@@ -19,7 +19,8 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="456"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iW-8V-y7w">
-                    <rect key="frame" x="164" y="629" width="44" height="30"/>
+                    <rect key="frame" x="138" y="539" width="98" height="55"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <state key="normal" title="Speak">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
