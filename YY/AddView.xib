@@ -16,28 +16,29 @@
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zlS-MM-Ntk">
-                        <rect key="frame" x="8" y="230" width="359" height="30"/>
+                        <rect key="frame" x="8" y="386" width="359" height="30"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                     <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zzD-CL-QYa">
-                        <rect key="frame" x="8" y="413" width="359" height="180"/>
+                        <rect key="frame" x="8" y="515" width="359" height="100"/>
                     </pickerView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VKd-46-2vf">
+                        <rect key="frame" x="12" y="28" width="350" height="350"/>
+                    </imageView>
                     <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="RTK-os-fbY">
-                        <rect key="frame" x="8" y="268" width="359" height="162"/>
+                        <rect key="frame" x="8" y="424" width="359" height="100"/>
                         <date key="date" timeIntervalSinceReferenceDate="437168852.250763">
                             <!--2014-11-08 19:47:32 +0000-->
                         </date>
                     </datePicker>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VKd-46-2vf">
-                        <rect key="frame" x="8" y="37" width="359" height="202"/>
-                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             </view>
             <toolbarItems/>
             <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="138.5" y="101.5"/>
         </viewController>
     </objects>
 </document>
