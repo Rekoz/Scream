@@ -31,9 +31,6 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <connections>
-                <outlet property="delegate" destination="-1" id="AOe-Ue-Rr1"/>
-            </connections>
             <point key="canvasLocation" x="230.5" y="629.5"/>
         </view>
     </objects>

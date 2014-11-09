@@ -39,9 +39,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
         var cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as UICollectionViewCell
         
         cell.backgroundView = UIImageView(image: UIImage(contentsOfFile: NSBundle.mainBundle().pathForResource("IMG_2165", ofType: "JPG")!))
-        //temp.append(cell)
-        //var cell = MainCell()
-        //setup the cell
         return cell
     }
     
@@ -70,7 +67,8 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Photo.createInManagedObjectContext(managedObjectContext!, name: "123", photo: NSData(), voice: "Hello", pitch: 100, locationX: 1, locationY: 2)
+        //Photo.createInManagedObjectContext(managedObjectContext!, name: "123", photo: NSData(), voice: "Hello", pitch: 100, locationX: 1, locationY: 2)
+        //DataGenerator.generate(managedObjectContext!)
 
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         appDelegate.saveContext()

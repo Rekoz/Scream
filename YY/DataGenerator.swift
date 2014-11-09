@@ -14,7 +14,7 @@ class DataGenerator: NSObject {
     class func generate(moc: NSManagedObjectContext) {
         //UIImage(contentsOfFile: "")
         for i in 0...20 {
-            Photo.createInManagedObjectContext(moc, name: "123", photo: NSData(), voice: "Hello", pitch: 100, locationX: 1, locationY: 2)
+            Photo.createInManagedObjectContext(moc, name: "123", photo: UIImagePNGRepresentation(UIImage(contentsOfFile: NSBundle.mainBundle().pathForResource("IMG_2165", ofType: "JPG")!)), voice: "Hello", pitch: 100, locationX: 1, locationY: 2)
             //UIImage(contentsOfFile: NSBundle.mainBundle().pathForResource("IMG_2165", ofType: "JPG")!)
         }
     }

@@ -18,6 +18,8 @@
 		2F5CC89D1A0EE99000473A3A /* IMG_0001.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 2F5CC8941A0EE99000473A3A /* IMG_0001.JPG */; };
 		2FEA8FEB1A0E8F26008F7FFA /* YYNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEA8FEA1A0E8F26008F7FFA /* YYNavViewController.swift */; };
 		2FEA8FED1A0E9BBC008F7FFA /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEA8FEC1A0E9BBC008F7FFA /* DataGenerator.swift */; };
+		2FF7D7FD1A0F2EC100CD02E8 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7D7FB1A0F2EC100CD02E8 /* MainCell.swift */; };
+		2FF7D7FE1A0F2EC100CD02E8 /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7D7FC1A0F2EC100CD02E8 /* MainCell.xib */; };
 		4D2283581A0E91A3003A15F2 /* i53de82SP5CDv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D2283571A0E91A3003A15F2 /* i53de82SP5CDv.jpg */; };
 		4D48892C1A0E087C003196F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D48892B1A0E087C003196F9 /* AppDelegate.swift */; };
 		4D48892F1A0E087C003196F9 /* YY.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D48892D1A0E087C003196F9 /* YY.xcdatamodeld */; };
@@ -55,6 +57,8 @@
 		2F5CC8941A0EE99000473A3A /* IMG_0001.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0001.JPG; sourceTree = "<group>"; };
 		2FEA8FEA1A0E8F26008F7FFA /* YYNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYNavViewController.swift; sourceTree = "<group>"; };
 		2FEA8FEC1A0E9BBC008F7FFA /* DataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGenerator.swift; sourceTree = "<group>"; };
+		2FF7D7FB1A0F2EC100CD02E8 /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		2FF7D7FC1A0F2EC100CD02E8 /* MainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCell.xib; sourceTree = "<group>"; };
 		4D2283571A0E91A3003A15F2 /* i53de82SP5CDv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i53de82SP5CDv.jpg; sourceTree = "<group>"; };
 		4D4889261A0E087C003196F9 /* YY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D48892A1A0E087C003196F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -155,13 +159,13 @@
 				F6884C8A1A0EBB0B008275AB /* AddView.xib */,
 				F6884C821A0E8A03008275AB /* AddViewController.swift */,
 				4D4889641A0E7E1F003196F9 /* MainViewController.swift */,
-				4DC410161A0EBBAE0069E09F /* MainCell.xib */,
-				4D7C5BB11A0EEC04004887E2 /* MainCell.swift */,
 				2FEA8FEA1A0E8F26008F7FFA /* YYNavViewController.swift */,
 				4D48892D1A0E087C003196F9 /* YY.xcdatamodeld */,
 				4D4889601A0E7D76003196F9 /* Photo.swift */,
 				F47909311A0EDA0700EBCCAA /* CommentViewCell.swift */,
 				F479092F1A0ED98E00EBCCAA /* CommentViewCell.xib */,
+				2FF7D7FB1A0F2EC100CD02E8 /* MainCell.swift */,
+				2FF7D7FC1A0F2EC100CD02E8 /* MainCell.xib */,
 				4D4889291A0E087C003196F9 /* Supporting Files */,
 			);
 			path = YY;
@@ -247,6 +251,7 @@
 				F47909301A0ED98E00EBCCAA /* CommentViewCell.xib in Resources */,
 				F46C8BC01A0F2A0F0028F538 /* IMG_2378.PNG.png in Resources */,
 				4D2283581A0E91A3003A15F2 /* i53de82SP5CDv.jpg in Resources */,
+				2FF7D7FE1A0F2EC100CD02E8 /* MainCell.xib in Resources */,
 				2F5CC89B1A0EE99000473A3A /* IMG_2376.JPG in Resources */,
 				2F5CC89C1A0EE99000473A3A /* IMG_2348.JPG in Resources */,
 				4D4889631A0E7E09003196F9 /* MainView.xib in Resources */,
@@ -277,12 +282,12 @@
 				4D4889611A0E7D76003196F9 /* Photo.swift in Sources */,
 				F6884C831A0E8A03008275AB /* AddViewController.swift in Sources */,
 				2FEA8FED1A0E9BBC008F7FFA /* DataGenerator.swift in Sources */,
+				2FF7D7FD1A0F2EC100CD02E8 /* MainCell.swift in Sources */,
 				4D48892C1A0E087C003196F9 /* AppDelegate.swift in Sources */,
 				4D4889671A0E7E3B003196F9 /* PhotoViewController.swift in Sources */,
 				F47909321A0EDA0700EBCCAA /* CommentViewCell.swift in Sources */,
 				4D48892F1A0E087C003196F9 /* YY.xcdatamodeld in Sources */,
 				2FEA8FEB1A0E8F26008F7FFA /* YYNavViewController.swift in Sources */,
-				4D7C5BB21A0EEC04004887E2 /* MainCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
