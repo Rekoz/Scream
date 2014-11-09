@@ -47,9 +47,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         var pvc = PhotoViewController(nibName: "PhotoView", bundle: nil)
-        for p in sortedPhotos {
-            NSLog(String(p.name))
-        }
         pvc.photo = sortedPhotos[indexPath.length]
         self.navigationController?.pushViewController(pvc, animated: true)
     }

@@ -32,6 +32,11 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
     // initializers
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!) {
         let selectedImage : UIImage = image
