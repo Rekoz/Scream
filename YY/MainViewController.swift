@@ -6,19 +6,18 @@
 //
 //
 
-import Foundation
 import UIKit
 import CoreData
-//import Location
-//import Photo
-//import YYNavViewController
 import CoreLocation
 
-class MainViewController: UIViewController, CLLocationManagerDelegate {
+class MainViewController: UIViewController, CLLocationManagerDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     let locationManager = CLLocationManager()
     var currentLocation:CLLocation = CLLocation()
-    var sortedLocations = [Location]()
+    var sortedPhotos = [Photo]()
+    //var temp = [UICollectionViewCell]()
+    //var navigationController:UINavigationController
     
+    @IBOutlet weak var collectionView: UICollectionView!
     lazy var managedObjectContext : NSManagedObjectContext? = {
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         if let managedObjectContext = appDelegate.managedObjectContext {
@@ -28,11 +27,42 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
             return nil
         }
         }()
-
-    override init() {
-        super.init()
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 15
     }
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as UICollectionViewCell
+        
+        cell.backgroundView = UIImageView(image: UIImage(contentsOfFile: NSBundle.mainBundle().pathForResource("IMG_2165", ofType: "JPG")!))
+        //temp.append(cell)
+        //var cell = MainCell()
+        //setup the cell
+        return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        var pvc = PhotoViewController(nibName: "PhotoView", bundle: nil)
+        pvc.photo = sortedPhotos[indexPath.length]
+        self.navigationController?.pushViewController(pvc, animated: true)
+    }
+    
+    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+        //deselect
+    }
+    
+    /*override init() {
+        super.init()
+    }*/
 
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: "MainView", bundle: nibBundleOrNil)
+    }
+    
     required init(coder aDecoder: NSCoder) {
         //fatalError("init(coder:) has not been implemented")
         super.init(coder:aDecoder)
@@ -40,79 +70,51 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        Photo.createInManagedObjectContext(managedObjectContext!, name: "123", photo: NSData(), voice: "Hello", pitch: 100, locationX: 1, locationY: 2)
+
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        appDelegate.saveContext()
+
+        //let nib = UINib(nibName:"MainCell", bundle:nil)
+        //self.collectionView.registerNib(nib, forCellWithReuseIdentifier:"Cell");
+        self.collectionView.registerClass(MainCell.self, forCellWithReuseIdentifier: "Cell")
+
+        self.navigationItem.title = "SCREAM"
+        //self.navigationItem.leftBarButtonItem = UIBarButtonItem(BarButtonSystemItem: UIBarButtonSystemItemDone, target:self, action:nil)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: Selector("openAdd"))
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
-        
-        /*
-        LogItem.createInManagedObjectContext(self.managedObjectContext!, title: "1st Item", text: "This is my first log item")
-        LogItem.createInManagedObjectContext(self.managedObjectContext!, title: "2nd Item", text: "This is my second log item")
-        LogItem.createInManagedObjectContext(self.managedObjectContext!, title: "3rd Item", text: "This is my third log item")
-        LogItem.createInManagedObjectContext(self.managedObjectContext!, title: "4th Item", text: "This is my fourth log item")
-        LogItem.createInManagedObjectContext(self.managedObjectContext!, title: "5th Item", text: "This is my fifth log item")
-        LogItem.createInManagedObjectContext(self.managedObjectContext!, title: "6th Item", text: "This is my sixth log item")
-        */
-        
         fetchLocations()
-        
+    }
+    
+    func openAdd() {
+        var avc = AddViewController(nibName: "AddView", bundle: nil)
+        self.navigationController?.pushViewController(avc, animated: true)
     }
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         currentLocation = manager.location
-        sortedLocations = sorted(sortedLocations, { (obj1, obj2) -> Bool in
-            let l1 = obj1 as Location
-            let l2 = obj2 as Location
+        sortedPhotos = sorted(sortedPhotos, { (obj1, obj2) -> Bool in
+            let l1 = obj1 as Photo
+            let l2 = obj2 as Photo
             var oneDistance = self.currentLocation.distanceFromLocation(CLLocation(latitude: l1.locationX.doubleValue, longitude: l1.locationY.doubleValue))
             var twoDistance = self.currentLocation.distanceFromLocation(CLLocation(latitude: l2.locationX.doubleValue, longitude: l2.locationY.doubleValue))
             //if (oneDistance < twoDistance) { return NSOrderedAscending }
             //if (oneDistance > twoDistance) { return NSOrderedDescending }
             //return NSOrderedSame
-            return oneDistance > twoDistance
+            return oneDistance < twoDistance
         })
-        
-            /*
-            CLGeocoder().reverseGeocodeLocation(manager.location, completionHandler: {(placemarks, error)->Void in
-            
-            if (error != nil) {
-                println("Reverse geocoder failed with error" + error.localizedDescription)
-                return
-            }
-            
-            if placemarks.count > 0 {
-                let pm = placemarks[0] as CLPlacemark
-                self.displayLocationInfo(pm)
-            } else {
-                println("Problem with the data received from geocoder")
-            }
-        })*/
     }
-    
-    /*
-    func displayLocationInfo(placemark: CLPlacemark?) {
-        if let containsPlacemark = placemark {
-            //stop updating location to save battery life
-            locationManager.stopUpdatingLocation()
-            let locality = (containsPlacemark.locality != nil) ? containsPlacemark.locality : ""
-            let postalCode = (containsPlacemark.postalCode != nil) ? containsPlacemark.postalCode : ""
-            let administrativeArea = (containsPlacemark.administrativeArea != nil) ? containsPlacemark.administrativeArea : ""
-            let country = (containsPlacemark.country != nil) ? containsPlacemark.country : ""
-            println(locality)
-            println(postalCode)
-            println(administrativeArea)
-            println(country)
-        }
-        
-    }*/
     
     func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
         println("Error while updating location " + error.localizedDescription)
     }
     
     func fetchLocations() {
-        let fetchRequest = NSFetchRequest(entityName: "Location")
-        if let fetchResults = managedObjectContext!.executeFetchRequest(fetchRequest, error: nil) as? [Location] {
-            self.sortedLocations = fetchResults
+        let fetchRequest = NSFetchRequest(entityName: "Photo")
+        if let fetchResults = managedObjectContext!.executeFetchRequest(fetchRequest, error: nil) as? [Photo] {
+            self.sortedPhotos = fetchResults
         }
     }
     
