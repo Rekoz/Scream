@@ -17,7 +17,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
     //var temp = [UICollectionViewCell]()
     //var navigationController:UINavigationController
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var collectionView: ADLivelyCollectionView!
     lazy var managedObjectContext : NSManagedObjectContext? = {
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         if let managedObjectContext = appDelegate.managedObjectContext {
@@ -29,7 +29,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
         }()
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 15
+        return 12
     }
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
@@ -51,10 +51,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
     func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
         //deselect
     }
-    
-    /*override init() {
-        super.init()
-    }*/
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: "MainView", bundle: nibBundleOrNil)
@@ -68,7 +64,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
     override func viewDidLoad() {
         super.viewDidLoad()
         //DataGenerator.generate(managedObjectContext!)
-
+        self.collectionView.setInitialCellTransformBlock(ADLivelyTransformFlip)
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         appDelegate.saveContext()
 

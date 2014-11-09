@@ -27,8 +27,8 @@ class PhotoViewController:UIViewController {
     
     @IBAction func buttonSubmitClicked(sender: UIButton) {
         var mySpeechSynthesizer:AVSpeechSynthesizer = AVSpeechSynthesizer()
-        var myString:String = "This is the phrase to say"
-        var mySpeechUtterance:AVSpeechUtterance = AVSpeechUtterance(string:myString)
+        var mySpeechUtterance:AVSpeechUtterance = AVSpeechUtterance(string: photo.voice)
+        mySpeechUtterance.pitchMultiplier = photo.pitch.floatValue
         mySpeechSynthesizer.speakUtterance(mySpeechUtterance)
     }
     

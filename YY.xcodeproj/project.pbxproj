@@ -33,6 +33,11 @@
 		4D4889651A0E7E1F003196F9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4889641A0E7E1F003196F9 /* MainViewController.swift */; };
 		4D4889671A0E7E3B003196F9 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4889661A0E7E3B003196F9 /* PhotoViewController.swift */; };
 		4D4889691A0E7E44003196F9 /* PhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4889681A0E7E44003196F9 /* PhotoView.xib */; };
+		F45B13B81A0F40B800241733 /* ADLivelyCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B13B71A0F40B800241733 /* ADLivelyCollectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F45B13BA1A0F413A00241733 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45B13B91A0F413A00241733 /* MapKit.framework */; };
+		F45B13BC1A0F41A900241733 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45B13BB1A0F41A900241733 /* QuartzCore.framework */; };
+		F45B13C11A0F43D000241733 /* SAMath.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B13BE1A0F43D000241733 /* SAMath.m */; };
+		F45B13C21A0F43D000241733 /* SAMultisectorControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B13C01A0F43D000241733 /* SAMultisectorControl.m */; };
 		F46C8BBC1A0EF5420028F538 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46C8BBB1A0EF5420028F538 /* AudioToolbox.framework */; };
 		F46C8BC01A0F2A0F0028F538 /* IMG_2378.PNG.png in Resources */ = {isa = PBXBuildFile; fileRef = F46C8BBD1A0F2A0F0028F538 /* IMG_2378.PNG.png */; };
 		F46C8BC11A0F2A0F0028F538 /* IMG_2379.PNG.png in Resources */ = {isa = PBXBuildFile; fileRef = F46C8BBE1A0F2A0F0028F538 /* IMG_2379.PNG.png */; };
@@ -72,6 +77,15 @@
 		4D4889641A0E7E1F003196F9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4D4889661A0E7E3B003196F9 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		4D4889681A0E7E44003196F9 /* PhotoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoView.xib; sourceTree = "<group>"; };
+		F45B13B51A0F40B700241733 /* YY-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YY-Bridging-Header.h"; sourceTree = "<group>"; };
+		F45B13B61A0F40B800241733 /* ADLivelyCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADLivelyCollectionView.h; sourceTree = "<group>"; };
+		F45B13B71A0F40B800241733 /* ADLivelyCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADLivelyCollectionView.m; sourceTree = "<group>"; };
+		F45B13B91A0F413A00241733 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		F45B13BB1A0F41A900241733 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		F45B13BD1A0F43D000241733 /* SAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMath.h; sourceTree = "<group>"; };
+		F45B13BE1A0F43D000241733 /* SAMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMath.m; sourceTree = "<group>"; };
+		F45B13BF1A0F43D000241733 /* SAMultisectorControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMultisectorControl.h; sourceTree = "<group>"; };
+		F45B13C01A0F43D000241733 /* SAMultisectorControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMultisectorControl.m; sourceTree = "<group>"; };
 		F46C8BBB1A0EF5420028F538 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
 		F46C8BBD1A0F2A0F0028F538 /* IMG_2378.PNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_2378.PNG.png; sourceTree = "<group>"; };
 		F46C8BBE1A0F2A0F0028F538 /* IMG_2379.PNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_2379.PNG.png; sourceTree = "<group>"; };
@@ -87,10 +101,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45B13BC1A0F41A900241733 /* QuartzCore.framework in Frameworks */,
 				F46C8BBC1A0EF5420028F538 /* AudioToolbox.framework in Frameworks */,
 				4D4889531A0E10B3003196F9 /* CoreImage.framework in Frameworks */,
 				4D4889511A0E10A7003196F9 /* CoreData.framework in Frameworks */,
 				4D48894F1A0E10A2003196F9 /* CoreLocation.framework in Frameworks */,
+				F45B13BA1A0F413A00241733 /* MapKit.framework in Frameworks */,
 				4D48894D1A0E109B003196F9 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,11 +195,20 @@
 		4D4889541A0E10C0003196F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F45B13BD1A0F43D000241733 /* SAMath.h */,
+				F45B13BE1A0F43D000241733 /* SAMath.m */,
+				F45B13BF1A0F43D000241733 /* SAMultisectorControl.h */,
+				F45B13C01A0F43D000241733 /* SAMultisectorControl.m */,
+				F45B13BB1A0F41A900241733 /* QuartzCore.framework */,
+				F45B13B91A0F413A00241733 /* MapKit.framework */,
+				F45B13B61A0F40B800241733 /* ADLivelyCollectionView.h */,
+				F45B13B71A0F40B800241733 /* ADLivelyCollectionView.m */,
 				F46C8BBB1A0EF5420028F538 /* AudioToolbox.framework */,
 				4D4889521A0E10B3003196F9 /* CoreImage.framework */,
 				4D4889501A0E10A7003196F9 /* CoreData.framework */,
 				4D48894E1A0E10A2003196F9 /* CoreLocation.framework */,
 				4D48894C1A0E109B003196F9 /* AVFoundation.framework */,
+				F45B13B51A0F40B700241733 /* YY-Bridging-Header.h */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,6 +243,11 @@
 				TargetAttributes = {
 					4D4889251A0E087C003196F9 = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -273,16 +303,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45B13B81A0F40B800241733 /* ADLivelyCollectionView.m in Sources */,
 				4D4889651A0E7E1F003196F9 /* MainViewController.swift in Sources */,
 				4D4889611A0E7D76003196F9 /* Photo.swift in Sources */,
 				F6884C831A0E8A03008275AB /* AddViewController.swift in Sources */,
 				2FEA8FED1A0E9BBC008F7FFA /* DataGenerator.swift in Sources */,
+				F45B13C11A0F43D000241733 /* SAMath.m in Sources */,
 				2FF7D7FD1A0F2EC100CD02E8 /* MainCell.swift in Sources */,
 				4D48892C1A0E087C003196F9 /* AppDelegate.swift in Sources */,
 				4D4889671A0E7E3B003196F9 /* PhotoViewController.swift in Sources */,
 				F47909321A0EDA0700EBCCAA /* CommentViewCell.swift in Sources */,
 				4D48892F1A0E087C003196F9 /* YY.xcdatamodeld in Sources */,
 				2FEA8FEB1A0E8F26008F7FFA /* YYNavViewController.swift in Sources */,
+				F45B13C21A0F43D000241733 /* SAMultisectorControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +377,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "YY-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -386,7 +419,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "YY-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
