@@ -14,6 +14,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
     let locationManager = CLLocationManager()
     var currentLocation:CLLocation = CLLocation()
     var sortedPhotos = [Photo]()
+    //var temp = [UICollectionViewCell]()
     //var navigationController:UINavigationController
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -28,22 +29,28 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
         }()
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 15
     }
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 5
+        return 1
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("MainCell", forIndexPath: indexPath) as UICollectionViewCell
+        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as UICollectionViewCell
+        
+        cell.backgroundView = UIImageView(image: UIImage(contentsOfFile: NSBundle.mainBundle().pathForResource("IMG_2165", ofType: "JPG")!))
+        //temp.append(cell)
+        //var cell = MainCell()
         //setup the cell
         return cell
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        var pvc = PhotoViewController()
-        //pvc.photo =
-        //setup pvc
+        var pvc = PhotoViewController(nibName: "PhotoView", bundle: nil)
+        for p in sortedPhotos {
+            NSLog(String(p.name))
+        }
+        pvc.photo = sortedPhotos[indexPath.length]
         self.navigationController?.pushViewController(pvc, animated: true)
     }
     
@@ -66,11 +73,15 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var nib = UINib(nibName:"MainCell", bundle:nil)
-        self.collectionView.registerNib(nib, forCellWithReuseIdentifier:"MainCell");
-        
-        
+        Photo.createInManagedObjectContext(managedObjectContext!, name: "123", photo: NSData(), voice: "Hello", pitch: 100, locationX: 1, locationY: 2)
+
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        appDelegate.saveContext()
+
+        //let nib = UINib(nibName:"MainCell", bundle:nil)
+        //self.collectionView.registerNib(nib, forCellWithReuseIdentifier:"Cell");
+        self.collectionView.registerClass(MainCell.self, forCellWithReuseIdentifier: "Cell")
+
         self.navigationItem.title = "SCREAM"
         //self.navigationItem.leftBarButtonItem = UIBarButtonItem(BarButtonSystemItem: UIBarButtonSystemItemDone, target:self, action:nil)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: Selector("openAdd"))
@@ -110,9 +121,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UICollect
         }
     }
     
-    @IBAction func addButtonPressed(sender: AnyObject) {
-        self.navigationController?.pushViewController(AddViewController(), animated: true)
-    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

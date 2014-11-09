@@ -4,7 +4,7 @@ import AVFoundation
 class PhotoViewController:UIViewController {
 
     @IBOutlet weak var img: UIImageView!
-    var photo = Photo()
+    var photo:Photo!
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

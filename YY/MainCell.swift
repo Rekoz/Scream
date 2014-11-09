@@ -15,9 +15,19 @@ class MainCell: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var playButton: UIButton!
     
+    /*
     init(photo: Photo) {
         super.init()
         //self.image.image = UIImage(data: photo.photo)
+    }
+    */
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    override init() {
+        super.init()
     }
 
     @IBAction func touchPlay(sender: AnyObject) {
