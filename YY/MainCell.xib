@@ -4,12 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainCell" customModule="YY" customModuleProvider="target">
-            <connections>
-                <outlet property="image" destination="nBd-RZ-8Kt" id="8jz-9g-57s"/>
-                <outlet property="playButton" destination="lQt-ap-SUN" id="m1x-0o-73d"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainCell" customModule="YY" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KZG-E8-yeS" customClass="MainCell" customModule="YY" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
@@ -26,9 +21,6 @@
                         <state key="normal" title="Play">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
-                        <connections>
-                            <action selector="touchPlay:" destination="-1" eventType="touchDown" id="4bX-pm-1hh"/>
-                        </connections>
                     </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

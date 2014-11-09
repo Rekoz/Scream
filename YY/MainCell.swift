@@ -17,7 +17,7 @@ class MainCell: UICollectionViewCell {
     
     init(photo: Photo) {
         super.init()
-        image.image = UIImage(data: photo.photo)
+        //self.image.image = UIImage(data: photo.photo)
     }
 
     @IBAction func touchPlay(sender: AnyObject) {

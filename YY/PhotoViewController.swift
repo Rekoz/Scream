@@ -6,7 +6,6 @@ class PhotoViewController:UIViewController {
     @IBOutlet weak var img: UIImageView!
     var photo = Photo()
     
-    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         //fatalError("init(coder:) has not been implemented")
@@ -17,6 +16,9 @@ class PhotoViewController:UIViewController {
         super.init()
     }
     
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
     
     @IBAction func buttonSubmitClicked(sender: UIButton) {
         var mySpeechSynthesizer:AVSpeechSynthesizer = AVSpeechSynthesizer()

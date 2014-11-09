@@ -4,7 +4,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddViewController" customModule="YY" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="KIU-em-4Qu" id="C1L-KE-aDV"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <viewController title="AddViewController" id="cbV-0a-kYk" customClass="AddViewController" customModule="YY" customModuleProvider="target">
             <layoutGuides>
